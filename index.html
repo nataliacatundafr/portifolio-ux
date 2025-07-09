@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio UX - Natália Catunda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #0f0f0f;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px 40px;
+      background: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hero {
+      padding: 100px 40px;
+      text-align: center;
+      background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background: #7f5af0;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      margin: 0 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      opacity: 0.8;
+    }
+
+    .section {
+      padding: 80px 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    footer {
+      padding: 40px;
+      background: #000;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      color: #ec1919;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Natália Catunda</strong></div>
+    <nav>
+      <a href="#sobre">Sobre Mim</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="1751576030907.jpg" alt="Foto de Natália Catunda" style="border-radius: 50%; width: 150px; height: 150px;">
+    <h1>Oi, eu sou Natália 👋</h1>
+    <p>UX/UI Designer focada em criar experiências funcionais e humanas</p>
+    <button class="btn">Ver Projetos</button>
+    <button class="btn">Baixar CV</button>
+  </section>
+
+  <section class="section" id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Sou UX Designer com foco em acessibilidade, usabilidade e pesquisa centrada no usuário. Tenho experiência com protótipos em Figma e condução de testes de usabilidade.</p>
+  </section>
+  
+  <section class="section" id="habilidades">
+    <h2>Habilidades e Ferramentas</h2>
+    <p>Figma, Adobe XD, UX Research, UI Design, Prototipação, HTML/CSS</p>
+  </section>
+
+  <footer id="contato">
+    <p>Projetando com propósito. Sempre aberta a novos desafios.</p>
+    <div class="socials">
+      <a href="#">LinkedIn</a>
+      <a href="#">Behance</a>
+      <a href="#">GitHub</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <script>
+    // JS simples: rolar para seção ao clicar nos botões da hero
+    document.querySelector('.hero .btn').addEventListener('click', () => {
+      document.getElementById('sobre').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
